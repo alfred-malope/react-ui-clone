@@ -1,0 +1,192 @@
+.wrapperCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr .75fr;
+    gap: 70px;
+}
+.Card{
+   padding: 150px 20px;
+   position: relative;
+   border-radius: 35px;
+   overflow: hidden;
+}
+.shape{
+    position: absolute;
+    width: 50px;
+    height: 250px;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+.shape1{
+    width: 260px;
+    clip-path: polygon(43% 0, 100% 18%, 100% 100%, 44% 52%);
+    background: #e86b34;
+}
+.shape2{
+    width: 260px;
+    clip-path: polygon(43% 0, 100% 18%, 100% 100%, 44% 52%);
+    background: #7533fc;
+}
+.shape3{
+    width: 260px;
+    clip-path: polygon(43% 0, 100% 18%, 100% 100%, 44% 52%);
+    background: #d7155c;
+}
+.innerCard{
+    position: absolute;
+    padding:  110px 50%;
+    background: #ffffff;
+    border-radius: 35px;
+    bottom: 0;
+    left: 0;
+}
+.socialIcons{
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 5px solid red;
+    justify-content: center;
+    align-items: center;
+    background: #E5E9EC;
+    gap: 15px;
+    padding: 10px;
+    width: 50px;
+}
+.outcast{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+.socialIcons svg{
+    font-size: 1.1em;
+}
+.name{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.innerContent{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    gap: 5px;
+    width: 75%;
+}
+.customImg{
+    position: absolute;
+    width: 180px;
+    z-index: 1;
+    bottom: 130px;
+    right: -50px;
+    box-shadow: -20px 100px 50px #00000039;
+    object-fit: cover;
+}
+.standAloneImg{
+    position: absolute;
+    width: 110px;
+    z-index: 1;
+    bottom: 130px;
+    right: 0;
+    box-shadow: -20px 100px 50px #00000039;
+    object-fit: cover;
+}
+
+.innerContent h4{
+    font-weight: 500;
+}
+.innerContent h5{
+    color: #6e6b6b;
+    font-weight: 600;
+}
+.onlineIcon{
+    font-size: 1em;
+    color: #21C827;
+    outline: 3px solid white; 
+    background-color: #21C827;
+    border-radius: 50%;
+    z-index: 1;
+}
+.followBtn{
+    display: grid;
+    background: #001e2c;
+    color: #fff;
+    position: unset;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 0 auto 0 0;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all .4s ease-in-out;
+}
+.followBtn:hover{
+    display: grid;
+    border: 1px solid #001e2c;
+    color: #001e2c;
+    background: transparent;
+    
+}
+.anotherContainer{
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    left: 0;
+    padding: 10px;
+    margin: 0 auto;
+    border-bottom: 5px solid red;
+    background: #E5E9EC;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.arrowBtn{
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    padding: 7px 15px;
+    border-radius: 45px;
+    border: 0;
+    background: #fff;
+    display: flex;
+    cursor: pointer;
+}
+.arrowBtn svg{
+    font-size: 1.5em;
+}
+.basketball{
+    font-size: 1.7em;
+}
+
+@media (max-width: 940px) {
+    .wrapperCards{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 70px;
+    }
+}
+@media (max-width: 640px) {
+    .wrapperCards{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 70px;
+    }
+    .anotherContainer{
+        position: relative;
+        bottom: 0px;
+    }
+    .Card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        border-radius: 35px;
+        overflow: hidden;
+     }
+}

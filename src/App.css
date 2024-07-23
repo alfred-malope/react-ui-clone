@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: Poppins;
+}
+::selection{
+  background: #8cce8c;
+  color: #fff;
+}
+body{
+  background: #ECF0F3;
+  padding: 20px;
+}
+.container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "section"
+  "article"
+  "main";
+  padding: 10px 10%;
+  padding: 0px 10%;
+  gap: 10px;
+}
+section{
+  grid-area: section;
+}
+article{
+  grid-area: article;
+}
+cards{
+  grid-area: main;
+}
+
+
+@media (max-width: 940px) {
+  section{
+    padding: 30px 0;
+  }
+  article{
+    padding: 30px 0;
+  }
+  cards{
+    padding: 30px 0;
+  }
+}

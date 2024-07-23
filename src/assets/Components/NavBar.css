@@ -1,0 +1,158 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 30px;
+    top: 0;
+}
+
+.links {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.links ul {
+    display: flex;
+    gap: 15px;
+}
+
+.links ul a {
+    color: rgb(124, 124, 124);
+    font-size: .8em;
+    text-align: center;
+}
+
+.searchBar {
+    position: relative;
+}
+
+.Bar {
+    position: relative;
+    width: 90px;
+    height: 35px;
+}
+
+input {
+    position: relative;
+    width: 120px;
+    height: 35px;
+    border-radius: 5px;
+    background: #d6d6d6;
+    border: none;
+    padding: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.searchIcon {
+    position: absolute;
+    right: -25px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 25px;
+}
+
+.otherIcons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.otherIcons svg {
+    font-size: 25px;
+}
+
+.userIcon {
+    display: flex;
+    border-radius: 50%;
+}
+
+.userIcon img {
+    background: green;
+    border-radius: 50%;
+    width: 40px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+@media (max-width: 940px) {
+    .links {
+        position: absolute;
+        right: 0;
+        top: 10%;
+        background: white;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        transform: translateY(-200%);
+    }
+    
+    .links.open {
+        transform: translateY(0);
+    }
+
+    .links ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .links ul a {
+        font-size: 1em;
+        border-bottom: 1px solid #ddd;
+    }
+    .hamburger {
+        display: block;
+    }
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    .otherIcons {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+}
+@media (max-width: 640px) {
+
+    .otherIcons {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}
+@media (max-width: 415px) {
+    .otherIcons {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: .4em;
+    }
+    .otherIcons svg:nth-child(1),
+    .otherIcons svg:nth-child(2){
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 2.5em;
+    }    
+}

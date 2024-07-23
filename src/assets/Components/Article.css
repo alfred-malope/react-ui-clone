@@ -1,0 +1,57 @@
+.Article{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.blocks{
+    display: flex;
+    gap: 20px;
+}
+.block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    border-radius: 15px;
+}
+.one{
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+}
+.two{
+    background: linear-gradient(135deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff);
+}
+.three{
+    background: linear-gradient(135deg, #ff6a6a, #0000ff, #ffb6b9 100%)
+}
+.four{
+    background: #c5c5c5;
+}
+.block span{
+    font-size: .6em;
+    font-weight: 600;
+}
+.icon .downArrow{
+    color: red;
+    font-size: 1.4em;
+    bottom: 0px;
+}
+.icon .rightArrow{
+    font-size: 2.5em;
+    bottom: 0px;
+    color: #2a2e32;
+}
+
+.Text h1{
+    font-weight: 600;
+}
+
+@media (max-width: 940px) {
+    .Article{
+        padding: 20px;
+        flex-direction: column;
+    }
+}
